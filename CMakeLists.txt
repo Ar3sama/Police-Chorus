@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.24)
 
 set(CMAKE_CXX_STANDARD 20)
-project(INSERT_PLUGIN_NAME VERSION 0.0.1)
+project(PoliceChorus VERSION 0.0.1)
 
 add_subdirectory("C:/JUCE" JUCE)
 
@@ -36,12 +36,12 @@ juce_add_plugin(${PROJECT_NAME}
           NEEDS_MIDI_OUTPUT FALSE                     # Does the plugin need midi output?
           IS_MIDI_EFFECT FALSE                        # Is this plugin a MIDI effect?
           EDITOR_WANTS_KEYBOARD_FOCUS FALSE           # Does the editor need keyboard focus?
-          COPY_PLUGIN_AFTER_BUILD FALSE              # Should the plugin be installed to a default location after building?
-          PLUGIN_MANUFACTURER_CODE Juce               # A four-character manufacturer id with at least one upper-case character
-          PLUGIN_CODE Dem0                            # A unique four-character plugin id with exactly one upper-case character
+          COPY_PLUGIN_AFTER_BUILD FALSE               # Should the plugin be installed to a default location after building?
+          PLUGIN_MANUFACTURER_CODE Sama               # A four-character manufacturer id with at least one upper-case character
+          PLUGIN_CODE Chor                            # A unique four-character plugin id with exactly one upper-case character
                                                       # GarageBand 10.3 requires the first letter to be upper-case, and the remaining letters to be lower-case
           FORMATS VST3 Standalone                     # The formats to build. Other valid formats are: AAX Unity VST AU AUv3
-          PRODUCT_NAME "INSERT_PLUGIN_NAME")                 # The name of the final executable, which can differ from the target name
+          PRODUCT_NAME "Police Chorus")                 # The name of the final executable, which can differ from the target name
 
 
 

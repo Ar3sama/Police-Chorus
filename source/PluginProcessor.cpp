@@ -142,7 +142,12 @@ void AudioPluginAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer,
     if (bypass)
         return;
 
-    dsp.processBlock (buffer);
+    const auto rate = parameters.getRawParameterValue (ParameterIDs::rate)->load();
+    const auto depth = parameters.getRawParameterValue (ParameterIDs::depth)->load();
+    const auto mix = parameters.getRawParameterValue (ParameterIDs::mix)->load();
+    const auto volume = parameters.getRawParameterValue (ParameterIDs::volume)->load();
+
+    dsp.processBlock (buffer, rate, depth, mix, volume);
 }
 
 //==============================================================================

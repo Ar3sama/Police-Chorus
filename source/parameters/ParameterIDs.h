@@ -3,8 +3,8 @@
 namespace ParameterIDs
 {
     inline constexpr const char* bypass = "bypass";
-
-    // Add parameter IDs here when the plugin concept is defined.
-    // Example:
-    // inline constexpr const char* exampleParameter = "exampleParameter";
+    inline constexpr const char* rate = "rate";
+    inline constexpr const char* depth = "depth";
+    inline constexpr const char* mix = "mix";
+    inline constexpr const char* volume = "volume";
 }
